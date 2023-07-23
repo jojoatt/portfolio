@@ -174,7 +174,7 @@ svg {
 }
 
 .nav__logo {
-    border: 1px solid purple;
+ /*   border: 4px solid purple;*/
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -182,16 +182,64 @@ svg {
 .nav__logo span {
     color: var(--first-color);
 }
-
+/*
 .nav__menu {
-    border: 1px solid yellow;
-}
+    border: 4px solid yellow;
+}*/
 
 .nav__toggle,
 .nav__close {
-    border: 3px solid black;
-    display: flex;
+/*    border: 4px solid black;*/
     font-size: 1.25rem;
     color: var(--title-color);
     cursor: pointer;
 }
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1023px){
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 10%, .3);
+    width: 75%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); /* For safari */
+    transition: right .4s;
+  }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: color .4s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+
+
+/* Add blur to header */
+
+
+/* Active link */
