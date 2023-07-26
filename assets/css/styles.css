@@ -404,12 +404,6 @@ svg {
   transition: transform 0.4s;
 }
 
-.skills__list i {
-  position: relative;
-  font-size: 4rem;
-  top: -5px;
-}
-
 .skills__list li:hover {
   transform: translateY(-0.25rem);
 }
