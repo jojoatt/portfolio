@@ -424,7 +424,6 @@ svg {
 .tools__list li:hover {
   transform: translateY(-0.25rem);
 }
-
 /*=============== PROJECTS ===============*/
 .projects__container {
   display: flex;
@@ -435,8 +434,9 @@ svg {
   background-color: var(--container-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 260px;
+  height: 430px;
   border-radius: 15px;
   padding: 20px;
 }
@@ -445,11 +445,9 @@ svg {
   text-align: center;
   font-weight: var(--font-medium);
   color: var(--title-color);
-  margin-bottom: 0.2rem;
 }
 
 .card-description {
-  margin-bottom: 1.5rem;
   font-size: small;
 }
 
@@ -460,10 +458,14 @@ svg {
 .card-images {
   display: flex;
   flex-direction: row;
-  height: 50px;
-  justify-content: space-around;
-  margin-bottom: 1.5rem;
+  justify-content: center;
 }
+
+.card-images img {
+  height: 50px;
+  width: 50px;
+}
+
 
 .card-footer a {
   display: flex;
@@ -476,7 +478,6 @@ svg {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
 /*=============== CONTACT ===============*/
 .contact__container {
   padding-top: 1rem;
@@ -521,7 +522,6 @@ svg {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
-
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--container-color);
@@ -612,3 +612,26 @@ svg {
 .show-scroll {
   bottom: 3rem;
 }
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+/*@media screen and (max-width: 320px) {
+  .coontainer {
+    margin-inline: 1rem;
+  }
+
+  .skills__content {
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+
+}
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .home__container, 
+  .about__container {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+}*/
+
+/* For large devices */
