@@ -396,6 +396,7 @@ svg {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 15px;
 }
 
@@ -415,6 +416,7 @@ svg {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 15px;
 }
 
@@ -617,9 +619,13 @@ svg {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .container {
     margin-inline: 1rem;
+  }
+
+  .projects__container {
+    justify-content: center;
   }
 }
 /* For medium devices */
